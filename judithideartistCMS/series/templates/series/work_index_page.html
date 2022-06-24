@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-workindexpage{% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    <div class="intro">{{ page.intro|richtext }}</div>
+
+    {% for series in page.get_children %}
+        <h2><a href="{% pageurl series %}">{{ series.title }}</a></h2>
+        {{ series.specific.intro }}
+        {{ series.specific.body|richtext }}
+    {% endfor %}
+
+{% endblock %}

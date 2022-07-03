@@ -1,0 +1,76 @@
+body {
+    margin: 5vw 20vw;
+}
+
+.blog-image-container {
+    width: 100%;
+}
+
+.blog-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.blog-title {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 5rem;
+}
+
+.blog-date {
+    text-align: right;
+    font-family: 'Lora', serif;
+}
+
+.blog-subtitle {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    
+}
+
+.body-text {
+    text-align: justify;
+    font-size: 1.25rem;
+    font-family: 'Lora', serif;
+}
+
+.social-box {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.share-icon {
+    margin: 0 .2rem;
+}
+
+.fb {
+    color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: aquamarine;
+    }
+    .blog-title {
+        font-size: 3rem;
+    }
+    .blog-subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: fuchsia;
+    }
+    .blog-title {
+        font-size: 2rem;
+    }
+    .blog-subtitle {
+        font-size: 1rem;
+    }
+}

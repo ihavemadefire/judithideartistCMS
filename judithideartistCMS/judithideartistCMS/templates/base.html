@@ -30,7 +30,23 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
-
+        <div class="menu">
+            <div class="link">
+                <a href="/blog/">
+                    Artist's Blog
+                </a>
+            </div>
+            <div class="link">
+                <a href="/work/">
+                    Work
+                </a>
+            </div>
+            <div class="link">
+                <a href="/statement/">
+                    Statement of Purpose
+                </a>
+            </div>
+        </div>
         {% block content %}{% endblock %}
 
         {# Global javascript #}

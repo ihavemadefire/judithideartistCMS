@@ -51,9 +51,21 @@ body {
     color: blue;
 }
 
+.blog-list-title {
+    font-family: 'Poiret One', cursive;
+    font-size: 3rem;
+}
+
+.return {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none !important;
+    font-size: xx-large;
+}
+
 @media screen and (max-width: 1200px) {
     body {
-        background-color: aquamarine;
+        margin: 5vw 15vw;
     }
     .blog-title {
         font-size: 3rem;
@@ -65,12 +77,19 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: fuchsia;
+        margin: 5vw 10vw;
     }
     .blog-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
     .blog-subtitle {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .return {
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        text-decoration: none !important;
+        font-size: xx-large;
     }
 }
